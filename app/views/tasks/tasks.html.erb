@@ -1,0 +1,7 @@
+<h1>Tasks</h1>
+<%= button_to "Home", root_path, :method => "get" %>
+<ul>
+  <% @tasks.each do |task| %>
+    <li><%= task.title %></li>
+  <% end %>
+</ul>
