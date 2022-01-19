@@ -10,4 +10,8 @@ class TasksController < ApplicationController
     @task = Task.find(params[:id])
   end
 
+  def new
+    @taks = Task.new
+  end
+
 end
