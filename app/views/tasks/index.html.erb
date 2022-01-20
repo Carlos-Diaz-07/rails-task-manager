@@ -1,5 +1,5 @@
 <h1>Tasks</h1>
-<%= button_to "Home", root_path, :method => "get" %>
+<%= link_to "Add Task", new_task_path %>
 <ul>
   <% @tasks.each do |task| %>
     <li>
